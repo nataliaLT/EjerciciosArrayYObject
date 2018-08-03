@@ -27,10 +27,15 @@ function areValidCredentials(name, password) {
     }
 }
 //Ejercicio findPairForSum
-function findPairForSum(array,number){
-    let array = [4,5];
-    for(let i>0; array.length; ++i);
-}
+function findPairForSum(array, number) {
+    for(var i=0; i<array.length; i++){
+      for(var a= i+1; a<array.length; a++){
+        if(array[i] + array[a]== number){
+          var hola= [array[i], array[a]];
+        }
+      }
+    }return hola;
+    }
 
 //Ejercicio filterOddElements
 function filterOddElements(arr) {
