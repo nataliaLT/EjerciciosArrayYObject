@@ -15,7 +15,7 @@ function getNthElement(array, n) {
  //Ejercicio convertDoubleSpaceToSingle
  function convertDoubleSpaceToSingle(str){ 
     let expresionRegular = /\s* \s*/;
-    return str.split(expresionRegular).join(' ');
+   return str.split(expresionRegular).join(' ');
   }  
 
 //Ejercicio areValidCredentials
@@ -25,7 +25,40 @@ function areValidCredentials(name, password) {
     }else {
       return false;
     }
-  }
+}
+//Ejercicio findPairForSum
+function findPairForSum(array,number){
+    let array = [4,5];
+    for(let i>0; array.length; ++i);
+}
 
-//Ejercicios de Objects
+//Ejercicio filterOddElements
+function filterOddElements(arr) {
+    let impar=[];
+     for(let i = 0; i<arr.length; i++){
+         if(arr[i]%2!== 0){
+           impar.push(arr[i]);
+             
+         }
+     }return impar;
+ }
+
+/*Ejercicios de Objects
+addArrayProperty();
+function addArrayProperty(obj, key, array){
+     let obj = {};
+     let key = 'myProperty';    
+     let array= [1,3];
+     
+    obj.key = 'myProperty';
+
+        } 
+    length  +/
+      
+       
+      
+    
   
+  /*alertas();
+  function alertas(){
+      alert('hola');}*/
