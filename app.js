@@ -78,10 +78,16 @@ function getElementOfArrayProperty(obj, key, index) {
   var hola= [];
   resultado = hola.map(function(element){ 
      return element.key; }).indexOf(index);
-  }//solo no me corre el ultimo test */
+  }//solo no me corre el ultimo test 
 
 //Ejercicio getAllKeys
 function getAllKeys(obj) {
   var resultado = Object.keys(obj);
   return resultado;
+}*/
+
+//Ejercicio addFullNameProperty
+function addFullNameProperty(obj) {
+  var values = Object.values(obj);
+  obj.fullName = values.join(' ');
 }
