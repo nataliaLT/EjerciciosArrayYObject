@@ -1,4 +1,4 @@
-//Ejercicios de array
+/*//Ejercicios de array
 //Ejercicio computeAverageLengthOfWords
 function computeAverageLengthOfWords(word1, word2) {
     let resultado = (word1.length + word2.length)/2;
@@ -15,7 +15,7 @@ function getNthElement(array, n) {
  //Ejercicio convertDoubleSpaceToSingle
  function convertDoubleSpaceToSingle(str){ 
     let expresionRegular = /\s* \s*/;
-   return str.split(expresionRegular).join(' ');
+   /*return str.split(expresionRegular).join(' ');
   }  
 
 //Ejercicio areValidCredentials
@@ -55,23 +55,20 @@ function filterOddElements(arr) {
       }
       return hola[0];//si no tiene ninguna de las dos condiciones arriba, debe retornarme el primer elemento de mi nuevo arreglo 
     
-      }
-/*Ejercicios de Objects
-addArrayProperty();
-function addArrayProperty(obj, key, array){
-     let obj = {};
-     let key = 'myProperty';    
-     let array= [1,3];
-     
-    obj.key = 'myProperty';
-
+ }
+//Ejercicios de Objects
+function addArrayProperty(obj,key,array){
+ 
         } 
-    length  +/
-      
        
-      
-    
-  
-  /*alertas();
-  function alertas(){
-      alert('hola');}*/
+
+//Ejercicio contador de propiedades
+const objectPropertiesCounter = (obj) => {
+  Object.keys(obj)
+ }
+*/
+// Ejercicio listAlValues
+ function listAllValues(obj) {
+  var resultado = Object.values(obj) //creo una variable que contiene mi metodo que me entregara el arreglo, en el entre parentesis va el objeto al que le hare el un arreglo con las propiedades
+  return resultado;
+}
