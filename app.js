@@ -55,20 +55,19 @@ function filterOddElements(arr) {
       }
       return hola[0];//si no tiene ninguna de las dos condiciones arriba, debe retornarme el primer elemento de mi nuevo arreglo 
     
- }
+ }*/
 //Ejercicios de Objects
-function addArrayProperty(obj,key,array){
- 
-        } 
-       
-
+ function addArrayProperty(obj, key, arr) {
+  obj.key = arr;  // le digo que mi clave key es igual a mi clave arr del mi objeto obj
+}
+/*
 //Ejercicio contador de propiedades
 const objectPropertiesCounter = (obj) => {
   Object.keys(obj)
  }
-*/
+
 // Ejercicio listAlValues
  function listAllValues(obj) {
   var resultado = Object.values(obj) //creo una variable que contiene mi metodo que me entregara el arreglo, en el entre parentesis va el objeto al que le hare el un arreglo con las propiedades
   return resultado;
-}
+}*/
