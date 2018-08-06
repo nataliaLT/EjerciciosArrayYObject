@@ -71,11 +71,17 @@ const objectPropertiesCounter = (obj) => {
  function listAllValues(obj) {
   var resultado = Object.values(obj) //creo una variable que contiene mi metodo que me entregara el arreglo, en el entre parentesis va el objeto al que le hare el un arreglo con las propiedades
   return resultado;
-}*/
+}
 
 // Ejercicio getElementOfArrayProperty
 function getElementOfArrayProperty(obj, key, index) {
   var hola= [];
-  resultado = hola.map(function(element){
+  resultado = hola.map(function(element){ 
      return element.key; }).indexOf(index);
-  }
+  }//solo no me corre el ultimo test */
+
+//Ejercicio getAllKeys
+function getAllKeys(obj) {
+  var resultado = Object.keys(obj);
+  return resultado;
+}
