@@ -84,10 +84,22 @@ function getElementOfArrayProperty(obj, key, index) {
 function getAllKeys(obj) {
   var resultado = Object.keys(obj);
   return resultado;
-}*/
+}
 
 //Ejercicio addFullNameProperty
 function addFullNameProperty(obj) {
   var values = Object.values(obj);
   obj.fullName = values.join(' ');
-}
+}*/
+
+//Ejercicio getSumOfAllElementsAtProperty
+function getSumOfAllElementsAtProperty(obj, key) {
+ 
+  var arr= obj.key;
+  var sum= 0;
+  
+  for(var i=0; i< arr.length ; i++){
+    sum += arr[i];
+  }if(typeof arr!= 'string');
+  return sum;
+}//no me corre los primeros 2 test
