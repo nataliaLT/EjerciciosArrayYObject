@@ -114,7 +114,7 @@ function transformEmployeeData(array) {
        arr.push(objeto);
    }
    return arr;
- }*/
+ }
 //Ejercicio getProductOfAllElemenstAtProperty
  function getProductOfAllElementsAtProperty(obj, key) {
   var mul= 1;
@@ -124,4 +124,12 @@ function transformEmployeeData(array) {
      mul *= obj.key[arr];
   }
   return mul; 
+}*/
+//Ejercicio removeStringValuesLongerThan
+function removeStringValuesLongerThan(num, obj) {
+  for( var prop in obj){
+    if(obj[prop].length > num)
+    delete obj[prop];
+}
+  return obj;
 }
