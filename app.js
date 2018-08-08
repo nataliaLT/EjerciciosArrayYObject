@@ -94,15 +94,14 @@ function addFullNameProperty(obj) {
 
 //Ejercicio getSumOfAllElementsAtProperty
 function getSumOfAllElementsAtProperty(obj, key) {
- 
-  var arr= obj.key;
   var sum= 0;
-  
-  for(var i=0; i< arr.length ; i++){
-    sum += arr[i];
-  }if(typeof arr!= 'string');
-  return sum;
-}//no me corre los primeros 2 test*/
+  if(Array.isArray(obj.key)=== false || obj.key === 0){
+    return 0;
+  } for( var arr in obj.key){
+     sum += obj.key[arr];
+  }
+  return sum; 
+}
 
 //Ejercicio transformEmployeeData
 function transformEmployeeData(array) {
@@ -115,4 +114,5 @@ function transformEmployeeData(array) {
        arr.push(objeto);
    }
    return arr;
- }
+ }*/
+
