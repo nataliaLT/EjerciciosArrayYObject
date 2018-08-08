@@ -90,7 +90,7 @@ function getAllKeys(obj) {
 function addFullNameProperty(obj) {
   var values = Object.values(obj);
   obj.fullName = values.join(' ');
-}*/
+}
 
 //Ejercicio getSumOfAllElementsAtProperty
 function getSumOfAllElementsAtProperty(obj, key) {
@@ -102,4 +102,17 @@ function getSumOfAllElementsAtProperty(obj, key) {
     sum += arr[i];
   }if(typeof arr!= 'string');
   return sum;
-}//no me corre los primeros 2 test
+}//no me corre los primeros 2 test*/
+
+//Ejercicio transformEmployeeData
+function transformEmployeeData(array) {
+  var arr= [];
+   for (var i = 0; i < array.length; i++){
+       var objeto = {};
+       for (var a = 0; a < array[i].length; a++){
+           objeto[array[i][a][0]] = array[i][a][1];
+       }
+       arr.push(objeto);
+   }
+   return arr;
+ }
