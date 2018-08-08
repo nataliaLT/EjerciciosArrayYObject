@@ -115,4 +115,13 @@ function transformEmployeeData(array) {
    }
    return arr;
  }*/
-
+//Ejercicio getProductOfAllElemenstAtProperty
+ function getProductOfAllElementsAtProperty(obj, key) {
+  var mul= 1;
+  if(Array.isArray(obj.key)=== false || obj.key === 0){
+    return 0;
+  } for( var arr in obj.key){
+     mul *= obj.key[arr];
+  }
+  return mul; 
+}
